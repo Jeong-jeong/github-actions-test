@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      #- uses: actions/checkout@v3
+
+      - name: Run pwd
+        run: pwd # 현재 사용자가 어떤 디렉토링 있는 알려주는 명령어
+
+      - name: Run ls -al
+        run: ls -al # Runner가 제공하느 디렉토리에 어떤 파일들이 있는지 알려줌.
+
+          echo test, and deploy your project.ㅔ
+          echo test, and deploy your project.

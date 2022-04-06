@@ -1,0 +1,16 @@
+name: Context prac
+
+
+on: [push]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Context Prac
+      - env: 
+          COMMIT_ID: ${{ github.sha }}
+      - run: echo "Commit id => $COMMIT_ID"
